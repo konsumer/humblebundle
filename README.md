@@ -7,8 +7,10 @@ A simple nodejs API for reading your Humble Bundle purchases.
 
 ## usage
 
+Install with `npm install humblebundle`.
+
 ```js
-var humblebundle = require('hmblebundle')
+var humblebundle = require('humblebundle')
 
 // only needed once before calling other stuff to set cookies
 humblebundle.login(mail, password)
