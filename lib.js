@@ -40,7 +40,7 @@ export function order (id) {
   })
     .then(res => res.json())
     .then(body => {
-      if(id){
+      if (id) {
         return body
       } else {
         return body.map(g => g.gamekey)
