@@ -58,9 +58,5 @@ If you leave out `id`, you'll get a list of your orders. If you include it, you'
 
 ### `claimed()`
 
-Get list of all the claimed entities for a user.
+Get list of all the claimed entities for a user. This takes a really long time (45 seconds on my connection.)
 
-
-### `search(query)`
-
-Search the store for a query string.
