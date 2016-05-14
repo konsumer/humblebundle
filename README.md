@@ -12,8 +12,7 @@ Install with `npm install humblebundle`.
 ```js
 var humblebundle = require('humblebundle')
 
-// only needed once before calling other stuff to set cookies
-humblebundle.login(mail, password)
+humblebundle.login(email, password)
   .then(function(){
     // get list of orders
     return humblebundle.order()
@@ -29,5 +28,25 @@ humblebundle.login(mail, password)
     throw err
   })
 
+```
+
+### tests
+
+Run them tests with `npm test`. You will need to set these environment variables:
 
 ```
+HUMBLE_EMAIL
+HUMBLE_PASSWORD
+```
+
+## api
+
+### `login(email, password)`
+
+Authenticate yourslf with Humble Bundle. Used to get the cookies used in other API calls. 
+
+
+### `order([id])`
+
+If you leave out `id`, you'll get a list of your orders. If you include it, you'll get details about the order.
+

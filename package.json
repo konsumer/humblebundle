@@ -1,6 +1,6 @@
 {
   "name": "humblebundle",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple API for reading your Humble Bundle purchases",
   "main": "index.js",
   "scripts": {
