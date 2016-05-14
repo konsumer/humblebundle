@@ -9,6 +9,8 @@ A simple nodejs API for reading your Humble Bundle purchases.
 
 Install with `npm install humblebundle`.
 
+Here is an example of getting some info:
+
 ```js
 var humblebundle = require('humblebundle')
 
@@ -41,6 +43,9 @@ HUMBLE_PASSWORD
 
 ## api
 
+All of these return promises.
+
+
 ### `login(email, password)`
 
 Authenticate yourslf with Humble Bundle. Used to get the cookies used in other API calls. 
@@ -50,3 +55,12 @@ Authenticate yourslf with Humble Bundle. Used to get the cookies used in other A
 
 If you leave out `id`, you'll get a list of your orders. If you include it, you'll get details about the order.
 
+
+### `claimed()`
+
+Get list of all the claimed entities for a user.
+
+
+### `search(query)`
+
+Search the store for a query string.
